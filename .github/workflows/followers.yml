@@ -1,13 +1,17 @@
 name: Check For Followers
+run-name: Update number of followers in Readme.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * * *'
 
 jobs:
-  boop:
+  update-followers:
+    name: "Update followers"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm ci
