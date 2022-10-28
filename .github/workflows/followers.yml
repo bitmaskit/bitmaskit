@@ -1,8 +1,9 @@
 name: Check For Followers
 run-name: Update number of followers in Readme.
+
 on:
   schedule:
-    - cron: '0 1 * * * *'
+    - cron: "0 1 * * * *"
 
 jobs:
   update-followers:
