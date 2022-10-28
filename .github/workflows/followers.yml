@@ -3,7 +3,7 @@ run-name: Update number of followers in Readme.
 
 on:
   schedule:
-    - cron: "0 1 * * * *"
+    - cron: '30 5 * * *'
 
 jobs:
   update-followers:
