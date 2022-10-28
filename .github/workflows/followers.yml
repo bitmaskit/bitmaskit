@@ -1,7 +1,6 @@
 name: Check For Followers
 run-name: Update number of followers in Readme.
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 1 * * * *'
 
