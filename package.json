@@ -1,0 +1,31 @@
+{
+    "name": "bitmaskit",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Followers README",
+    "main": "followers.js",
+    "directories": {
+      "lib": "lib"
+    },
+    "scripts": {
+      "build": "ncc build followers.js -o dist"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bitmaskit/bitmaskit.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/bitmaskit/bitmaskit/issues"
+    },
+    "homepage": "https://github.com/bitmaskit/bitmaskit#readme",
+    "dependencies": {
+      "@actions/core": "^1.4.0",
+      "@octokit/auth-oauth-device": "^3.1.2",
+      "@octokit/plugin-create-or-update-text-file": "^1.0.1",
+      "@vercel/ncc": "^0.28.6",
+      "octokit": "^1.0.5"
+    }
+  }
