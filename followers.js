@@ -4,7 +4,7 @@
 const { Octokit } = require("octokit");
 const core = require("@actions/core");
 
-const { checkFollowerCount } = require("./lib/octokit-plugin-check-follower-count");
+const { checkFollowerCount } = require("./lib/check-followers-count");
 
 // register plugin and set default for user agent
 const MyOctokit = Octokit.plugin(checkFollowerCount).defaults({
